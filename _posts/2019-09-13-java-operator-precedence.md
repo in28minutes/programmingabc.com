@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Operator Precedence: How Java Evaluates Expressions 
+title:      Operator Precedence - How Java Evaluates Expressions 
 date:       2018-09-09 10:30:00
 summary:    Explains how Java's operator precedence rules makes expression evaluation clear  
 categories: Java
