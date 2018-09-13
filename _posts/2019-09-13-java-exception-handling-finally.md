@@ -1,10 +1,9 @@
 ---
-
 layout:     post
 title:      Java Exception Handling with Finally
 date:       2018-09-07 17:36:00
 summary:    Understand how adding a finally clause to a try...catch block neatly releases resources if there is an exception
-categories: Java, Exception Handling, finally
+categories: Java
 permalink:  /java-exception-handling-with-finally
 
 ---

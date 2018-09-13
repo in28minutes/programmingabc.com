@@ -3,7 +3,7 @@ layout:     post
 title:      Introduction to Lambda Expressions in Java
 date:       2018-09-13 11:58:00
 summary:    Introduction to lambda Expressions. The main building block of functional programming.
-categories: Java, Lambda, Functional Programming
+categories: Java
 permalink:  /lambda-expressions-in-java
 ---
 
