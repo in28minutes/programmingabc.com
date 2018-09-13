@@ -2,7 +2,7 @@
 layout:     post
 title:      Java Printf - How to format console output 
 date:       2018-09-09 08:16:00
-summary:    Explains how easy it is to format console output, using Java library methods  
+summary:    Explains how easy it is to format console output, using Java library methods
 categories: Java
 permalink:  /printf-how-to-format-console-output
 ---

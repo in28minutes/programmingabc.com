@@ -2,7 +2,7 @@
 layout:     post
 title:      Introduction to Java Platform - JDK vs JRE vs JVM 
 date:       2018-09-12 07:47:00
-summary:    Explains how The terms JDK, JRE and the JVM are related, but different                                        
+summary:    Explains how The terms JDK, JRE and the JVM are related, but different
 permalink:  /introduction-to-java-platform-jdk-jre-jvm-differences
 ---
 

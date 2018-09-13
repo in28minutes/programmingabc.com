@@ -2,7 +2,7 @@
 layout:     post
 title:      Executor framework in Java - Take control over your tasks
 date:       2018-09-13 15:18:00
-summary:    Executor framework in Java - Take control over your tasks.
+summary:    Executor framework in Java - Take control over your tasks
 categories: Java
 permalink:  /executors-framework-in-java
 ---

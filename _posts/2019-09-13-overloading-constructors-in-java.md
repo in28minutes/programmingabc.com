@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Overloading Java Constructors - Be careful about it 
+title:      Overloading Java Constructors - Be careful about it
 date:       2018-09-13 11:58:00
 summary:    Explains what choices are available to maximize reuse of constructor code
 categories: Java, Constructors
