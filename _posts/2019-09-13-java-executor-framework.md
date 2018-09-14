@@ -1,10 +1,9 @@
 ---
 layout:     post
-title:      Executor framework in Java - Take control over your tasks
-date:       2018-09-13 15:18:00
-summary:    Executor framework in Java - Take control over your tasks
-categories: Java
-permalink:  /executors-framework-in-java
+title:      Executor framework in Java - Take control over your tasks 
+date:       2018-09-11 07:47:00
+summary:    Understand how to use Executor from in Java with Code Examples
+permalink:  /executor-framework-in-java-with-examples
 ---
 
 ## You will learn
@@ -58,62 +57,62 @@ The ```ExecutorService``` provides utilities to achieve each one of these. Let's
 
 ```java
 //**_ExecutorServiceRunner.java_**
-
 import java.util.concurrent.ExecutorService;
 
 import java.util.concurrent.Executors;
 
 class Task1 extends Thread {
 
-public void run() {
+	public void run() {
 
-System.out.println("Task1 Started ");
+		System.out.println("Task1 Started ");
 
-for(int i=101; i<=199; i++) {
+		for (int i = 101; i <= 199; i++) {
 
-System.out.print(i + " ");
+			System.out.print(i + " ");
 
-}
+		}
 
-System.out.println("\nTask1 Done");
+		System.out.println("\nTask1 Done");
 
-}
+	}
 
 }
 
 class Task2 implements Runnable {
 
-@Override
+	@Override
 
-public void run() {
+	public void run() {
 
-System.out.println("Task2 Started ");
+		System.out.println("Task2 Started ");
 
-for(int i=201; i<=299; i++) {
+		for (int i = 201; i <= 299; i++) {
 
-System.out.print(i + " ");
+			System.out.print(i + " ");
 
-}
+		}
 
-System.out.println("\nTask2 Done");
+		System.out.println("\nTask2 Done");
 
-}
+	}
 
 }
 
 public class ExecutorServiceRunner {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 
-ExecutorService executorService = Executors.getNewSingleThreadExecutor();
+		ExecutorService executorService = Executors.getNewSingleThreadExecutor();
 
-executorService.execute(new Task1());
+		executorService.execute(new Task1());
 
-executorService.execute(new Thread(new Task2()));
+		executorService.execute(new Thread(new Task2()));
+
+	}
 
 }
 
-}
 ```
 
 **_Console Output_**
@@ -143,31 +142,32 @@ Let's now have a taste of the real thing, creating  more than one thread using `
 ```java
 public class ExecutorServiceRunner {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 
-ExecutorService executorService = Executors.getNewSingleThreadExecutor();
+		ExecutorService executorService = Executors.getNewSingleThreadExecutor();
 
-executorService.execute(new Task1());
+		executorService.execute(new Task1());
 
-executorService.execute(new Thread(new Task2()));
+		executorService.execute(new Thread(new Task2()));
 
-System.out.print("\nTask3 Kicked Off\n");
+		System.out.print("\nTask3 Kicked Off\n");
 
-for(int i=301; i<=399; i++) {
+		for (int i = 301; i <= 399; i++) {
 
-System.out.print(i + " ");
+			System.out.print(i + " ");
+
+		}
+
+		System.out.println("\nTask3 Done");
+
+		System.out.println("\nMain Done");
+
+		executorService.shutdown();
+
+	}
 
 }
 
-System.out.println("\nTask3 Done");
-
-System.out.println("\nMain Done");
-
-executorService.shutdown();
-
-}
-
-}
 ```
 
 #### Example-02 Explained
@@ -184,33 +184,31 @@ The following examples will show you how you can create thread pools of varying 
 
 ```java
 //**_ExecutorServiceRunner.java_**
-
-
 public class ExecutorServiceRunner {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 
-ExecutorService executorService = Executors.getNewFixedThreadPool(2);
+		ExecutorService executorService = Executors.getNewFixedThreadPool(2);
 
-executorService.execute(new Task1());
+		executorService.execute(new Task1());
 
-executorService.execute(new Thread(new Task2()));
+		executorService.execute(new Thread(new Task2()));
 
-System.out.print("\nTask3 Kicked Off\n");
+		System.out.print("\nTask3 Kicked Off\n");
 
-for(int i=301; i<=399; i++) {
+		for (int i = 301; i <= 399; i++) {
 
-System.out.print(i + " ");
+			System.out.print(i + " ");
 
-}
+		}
 
-System.out.println("\nTask3 Done");
+		System.out.println("\nTask3 Done");
 
-ystem.out.println("\nMain Done");
+		System.out.println("\nMain Done");
 
-executorService.shutdown();
+		executorService.shutdown();
 
-}
+	}
 
 }
 ```
@@ -231,51 +229,51 @@ Let's explore one more scenario involving thread pool creation.
 
 ```java
 //**_ExecutorServiceRunner.java_**
-
 import java.util.concurrent.ExecutorService;
 
 import java.util.concurrent.Executors;
 
 class Task extends Thread {
 
-private int number;
+	private int number;
 
-public Task(int number) {
+	public Task(int number) {
 
-this.number = number;
+		this.number = number;
 
-}
+	}
 
-public void run() {
+	public void run() {
 
-System.out.println("Task " + number + " Started");
+		System.out.println("Task " + number + " Started");
 
-for(int i=number*100; i<=number*100+99; i++) {
+		for (int i = number * 100; i <= number * 100 + 99; i++) {
 
-System.out.print(i + " ");
+			System.out.print(i + " ");
 
-}
+		}
 
-System.out.println("\nTask " + number +" Done");
+		System.out.println("\nTask " + number + " Done");
 
-}
+	}
 
 }
 
 public class ExecutorServiceRunner {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 
-ExecutorService executorService = Executors.getNewFixedThreadPool(2);
+		ExecutorService executorService = Executors.getNewFixedThreadPool(2);
 
-executorService.execute(new Task(1));
+		executorService.execute(new Task(1));
 
-executorService.execute(new Task(2));
+		executorService.execute(new Task(2));
 
-executorService.execute(new Task(3));
+		executorService.execute(new Task(3));
 
-executorService.shutdown();
+		executorService.shutdown();
 
+	}
 }
 ```
 
@@ -287,30 +285,31 @@ executorService.shutdown();
 #### Example-05 : Larger Thread Pool Size
 
 ```java
-
 public class ExecutorServiceRunner {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 
-ExecutorService executorService = Executors.getNewFixedThreadPool(3);
+		ExecutorService executorService = Executors.getNewFixedThreadPool(3);
 
-executorService.execute(new Task(1));
+		executorService.execute(new Task(1));
 
-executorService.execute(new Task(2));
+		executorService.execute(new Task(2));
 
-executorService.execute(new Task(3));
+		executorService.execute(new Task(3));
 
-executorService.execute(new Task(4));
+		executorService.execute(new Task(4));
 
-executorService.execute(new Task(5));
+		executorService.execute(new Task(5));
 
-executorService.execute(new Task(6));
+		executorService.execute(new Task(6));
 
-executorService.execute(new Task(7));
+		executorService.execute(new Task(7));
 
-executorService.shutdown();
+		executorService.shutdown();
 
+	}
 }
+
 ```
 
 #### Example-05 Explained

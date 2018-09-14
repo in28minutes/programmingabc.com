@@ -111,35 +111,35 @@ import java.util.List;
 
 public class FunctionalProgrammingRunner {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 
-List<String> list = List.of("Apple", "Banana", "Cat", "Dog");
+		List<String> list = List.of("Apple", "Banana", "Cat", "Dog");
 
-//printBasic(list);
+		// printBasic(list);
 
-printFunctional(list);
+		printFunctional(list);
 
-}
+	}
 
-public static void printBasic(List<String> list) {
+	public static void printBasic(List<String> list) {
 
-for(String str:list) {
+		for (String str : list) {
 
-System.out.println(str);
+			System.out.println(str);
 
-}
+		}
 
-}
+	}
 
-public static void printFunctional(List<String> list) {
+	public static void printFunctional(List<String> list) {
 
-list.stream().forEach(
+		list.stream().forEach(
 
-element -> System.out.println(element)
+				element -> System.out.println(element)
 
-);
+		);
 
-}
+	}
 
 }
 ```
@@ -205,42 +205,39 @@ import java.util.List;
 
 public class FunctionalProgrammingRunner {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 
-List<String> list = List.of("Apple", "Bat", "Cat", "Dog");
+		List<String> list = List.of("Apple", "Bat", "Cat", "Dog");
 
-//printBasicWithFiltering(list);
+		// printBasicWithFiltering(list);
 
-printFPWithFiltering(list);
+		printFPWithFiltering(list);
 
-}
+	}
 
-public static void printBasicWithFiltering(List<String> list) {
+	public static void printBasicWithFiltering(List<String> list) {
 
-for(String str:list) {
+		for (String str : list) {
 
-if(str.endsWith("at")) {
+			if (str.endsWith("at")) {
 
-System.out.println(str);
+				System.out.println(str);
 
-}
+			}
 
-}
+		}
 
-}
+	}
 
-}
+	public static void printFPWithFiltering(List<String> list) {
 
-public static void printFPWithFiltering(List<String> list) {
+		list.stream()
 
-list.stream()
+				.filter(elem -> elem.endsWith("at"))
 
-.filter(elem -> elem.endsWith("at"))
+				.forEach(element -> System.out.println(element));
 
-.forEach(element -> System.out.println(element));
-
-}
-
+	}
 }
 ```
 

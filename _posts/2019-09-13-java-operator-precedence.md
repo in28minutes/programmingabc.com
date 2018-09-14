@@ -1,9 +1,8 @@
-
 ---
 layout:     post
-title:      Operator Precedence - How Java Evaluates Expressions 
+title:      Operator Precedence - Understand How Java Evaluates Expressions
 date:       2018-09-09 10:30:00
-summary:    Explains how Javas operator precedence rules makes expression evaluation clear
+summary:    Explains Java Operator Precedence Rules. Helps you easily understand expression evaluation.
 categories: Java
 permalink:  /operator-precedence-how-java-evaluates-expressions
 ---
@@ -16,7 +15,7 @@ permalink:  /operator-precedence-how-java-evaluates-expressions
 * How parentheses override Java operator precedence?
 
 ## We will discuss:
-* How combining different operators and different data, makes expressions tricky
+* How combining different operators and different data - makes expressions tricky
 * How operator precedence sorts out expression evaluation
 * Why Java allows you to group sub-expressions, using parentheses
 

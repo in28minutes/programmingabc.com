@@ -54,20 +54,32 @@ matter a lot. The programmer decides to feed in different recipes to the kiosk, 
 #### Example-01: Initial set of Constructors
 
 ```java
-    public class CoffeeRecipe {
-    //Hot black coffee, no sugar or cream
-    public CoffeeRecipe(String bean, short temperature) { /*  */ }
-    //Hot coffee with milk, no sugar, no cream
-    public CoffeeRecipe(String bean, String milkType, short temperature) {  /*  */ }
-    //Hot coffee with milk, sugar, no cream
-    public CoffeeRecipe(String bean, String milkType, boolean addSugar) {/* */ }
+public class CoffeeRecipe {
+    // Hot black coffee, no sugar or cream
+    public CoffeeRecipe(String bean, short temperature) {
+        /*  */ }
+
+    // Hot coffee with milk, no sugar, no cream
+    public CoffeeRecipe(String bean, String milkType, short temperature) {
+        /*  */ }
+
+    // Hot coffee with milk, sugar, no cream
+    public CoffeeRecipe(String bean, String milkType, boolean addSugar) {
+        /* */ }
+
+/*
     // Hot Coffee with milk, sugar, cream
-    CoffeeRecipe(String bean, String milkType, boolean addSugar, boolean withCream) { /*  */ }
+    CoffeeRecipe(String bean, String milkType, boolean addSugar, boolean withCream) {
+         }
+
     // Cold Coffee with milk, sugar, no cream
-    CoffeeRecipe(String bean, String milkType, boolean addSugar) { /* */ }
+    CoffeeRecipe(String bean, String milkType, boolean addSugar) {
+         }
+
     // Cold Coffee with milk, sugar, and cream
-    CoffeeRecipe(String bean, String milkType, boolean addSugar, boolean withCream) { /* */ }
-    }
+    CoffeeRecipe(String bean, String milkType, boolean addSugar, boolean withCream) {
+         }*/
+}
 ```
 There may be many more. The CoffeMaker kiosk will consume different CoffeeRecipes:
 
@@ -120,6 +132,7 @@ And the coffee maker’s code would be along these lines:
     		makeCoffee(coldRichRobusta);
     	}
     }
+```
 
 #### Example-02 Explained
 
