@@ -29,9 +29,9 @@ permalink:  /overloading-java-constructors-smartly
 
 ## Programming Courses
 
-- [Java Programming in 250 Steps](https://rebrand.ly/MISC-JAVA){:target="_blank"}
-- [Python Programming in 250 Steps](https://rebrand.ly/MISC-PYTHON){:target="_blank"}
-- [Python For Java Programmings](https://rebrand.ly/MISC-JAVA-PYTHON){:target="_blank"}
+- [Java Programming in 250 Steps](https://links.in28minutes.com/MISC-JAVA){:target="_blank"}
+- [Python Programming in 250 Steps](https://links.in28minutes.com/MISC-PYTHON){:target="_blank"}
+- [Python For Java Programmings](https://links.in28minutes.com/MISC-JAVA-PYTHON){:target="_blank"}
 - [Spring Boot for Beginners in 10 Steps](https://courses.in28minutes.com/p/spring-boot-for-beginners-in-10-steps){:target="_blank"}
 - [Complete in28Minutes Course Guide](https://courses.in28minutes.com/p/in28minutes-course-guide){:target="_blank"}
 
@@ -224,9 +224,9 @@ In summary:
 
 
 ## Next Steps
-- [Java Programming in 250 Steps](https://rebrand.ly/MISC-JAVA){:target="_blank"}
-- [Python Programming in 250 Steps](https://rebrand.ly/MISC-PYTHON){:target="_blank"}
-- [Python For Java Programmings](https://rebrand.ly/MISC-JAVA-PYTHON){:target="_blank"}
+- [Java Programming in 250 Steps](https://links.in28minutes.com/MISC-JAVA){:target="_blank"}
+- [Python Programming in 250 Steps](https://links.in28minutes.com/MISC-PYTHON){:target="_blank"}
+- [Python For Java Programmings](https://links.in28minutes.com/MISC-JAVA-PYTHON){:target="_blank"}
 - Learn Basics of Spring Boot - [Spring Boot vs Spring vs Spring MVC](http://www.springboottutorial.com/spring-boot-vs-spring-mvc-vs-spring){:target="_blank"}, [Auto Configuration](http://www.springboottutorial.com/spring-boot-auto-configuration){:target="_blank"}, [Spring Boot Starter Projects](http://www.springboottutorial.com/spring-boot-starter-projects){:target="_blank"}, [Spring Boot Starter Parent](http://www.springboottutorial.com/spring-boot-starter-parent){:target="_blank"}, [Spring Boot Initializr](http://www.springboottutorial.com/spring-initialzr-bootstrap-spring-boot-applications){:target="_blank"}
 
 
